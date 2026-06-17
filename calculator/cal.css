@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+#calculator{
+    margin: 100px 100px;
+    background-color: burlywood;
+    border: 3px solid rgb(107, 204, 16);
+    width: 350px;
+    height: 450px;
+    padding-top: 20px;
+}
+
+#display{
+    border: 2px solid red;
+    margin: 0px 50px 20px;
+    width: 245px;
+    height: 50px;
+}
+
+.line-me{
+    margin: 10px 52px;
+    display: flex;
+    gap: 5px;
+}
+
+button{
+    background-color: greenyellow;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+}
+
+.main-button-data{
+    width: 117px;
+    background-color: rgb(241, 91, 91);
+}
