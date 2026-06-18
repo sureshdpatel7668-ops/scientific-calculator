@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="cal.css">
 </head>
 <body>
+    <h1 class="calculator-title">***Scientific Calculator***</h1>
     <div id ="calculator">
         <input type="text" id="display" readonly>
     <div class="line-me">
@@ -148,7 +149,60 @@
         currentdisplay = currentdisplay.slice(0, -1);
         document.querySelector('#display').value=currentdisplay;
         ">Delete</button> 
+    </div><br><br>
+
+    <h1>Features:</h1>
+    <h3>It supports basic arithmetic operations, trigonometric functions(in dgree), logarithmic functions, and exponential functions. The calculator also includes a clear button to reset the display and a delete button to remove the last character entered.
+    </h3>
+     
+    <h1>Usage:</h1>
+    <h3>To use the calculator, simply click on the buttons to input numbers and operations. The current input will be displayed on the screen. To perform a calculation, click the "=" button, and the result will be shown on the display. You can also use parentheses to group operations and control the order of calculations.</h3>
+
+    <h1>Note:</h1>
+    <h3>Ensure that you enter valid mathematical expressions to avoid errors. The calculator is designed to handle a wide range of calculations, but it may not support all advanced mathematical functions.</h3>
+
+    <div class="last-line-me">
+    <button class = "last-button" onclick="
+        alert('This is a scientific calculator that supports basic arithmetic operations, trigonometric functions, logarithmic functions, and exponential functions. It also includes clear and delete functionalities for user convenience.');
+        ">Help</button>
+
+    <button class = "last-button" onclick="
+        alert('This calculator was developed by VICTUS. It is designed to provide users with a convenient tool for performing various mathematical calculations, including trigonometric functions, logarithmic functions, and basic arithmetic operations.');
+        ">About</button>
+     </div>
+    
+     <div class="last-line-me">
+    <button class = "last-button" onclick="
+        alert('Thank you for using this scientific calculator! If you have any feedback or suggestions for improvement, please feel free to share them. Your input is valuable in helping us enhance the functionality and user experience of the calculator.');
+        ">Feedback</button> 
+    
+    <button class = "last-button" onclick="
+        alert('For any technical support or inquiries regarding the calculator, please contact us at support@victus.com.');
+        ">Contact</button>
+     </div>
+
+     <button id="main-page-btn" onclick="window.location.href='http://iiitkota.ac.in'">GO To Main Page</button>
+    
+     <footer class="contact-footer">
+    <div class="footer-content">
+        <h3>Connect With Me</h3>
+        <p>Agar aapke paas koi query hai ya collaborate karna chahte hain, toh reach out karein!</p>
+        
+        <div class="contact-links">
+            <a href="mailto:sureshdpatel7668@gmail.com" class="contact-btn email-btn">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
+            
+            <a href="https://www.linkedin.com/in/suresh-kumar-10295a304" target="_blank" class="contact-btn linkedin-btn">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
     </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 | Developed with ❤️</p>
+    </div>
+</footer>
+
     <script>
         let firstdisplay='';
         let currentdisplay='';
