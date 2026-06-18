@@ -390,205 +390,146 @@ h3{
 /* ================= MOBILE ================= */
 
 
-@media(max-width:600px){
+@media screen and (max-width:600px){
 
-
-
-    .calculator-title{
-
-
-        font-size:28px;
-
-
+    body{
         width:100%;
-
-
-        margin:20px 0;
-
-
+        overflow-x:hidden;
     }
 
 
+    .calculator-title{
+        width:100%;
+        text-align:center;
+        font-size:26px;
+        margin:20px 0;
+    }
 
 
     #calculator{
 
-
-        width:100%;
-
-
-        max-width:350px;
-
+        width:90vw;
+        max-width:none;
 
         height:auto;
 
-
         margin:30px auto;
 
-
-        padding:20px 10px 30px;
-
+        padding:20px 0 30px;
 
     }
-
-
-
 
 
 
     #display{
 
+        width:75vw;
 
-        width:85%;
+        height:65px;
 
-
-        height:60px;
-
+        margin:0 auto 20px;
 
         font-size:22px;
 
-
     }
-
-
 
 
 
     .line-me{
 
-
         width:100%;
 
-
-        margin:10px 0;
-
+        margin:12px 0;
 
         justify-content:center;
 
-
-        gap:8px;
-
+        gap:12px;
 
     }
-
-
 
 
 
     button{
 
-
         width:55px;
-
 
         height:55px;
 
-
-        font-size:16px;
-
+        font-size:18px;
 
     }
-
-
 
 
 
     .main-button-data{
 
-
         width:130px;
 
-
     }
-
-
 
 
 
     h1{
 
-
         width:100%;
-
 
         padding:0 20px;
 
-
-        font-size:26px;
-
+        font-size:28px;
 
     }
-
-
-
 
 
 
     h3{
 
-
         width:100%;
-
 
         padding:0 20px;
 
+        font-size:17px;
 
-        font-size:16px;
-
-
-        line-height:1.5;
-
+        text-align:left;
 
     }
 
 
 
+    .last-line-me{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
 
 
 
     .last-button{
 
-
-        width:45%;
-
-
-        height:45px;
-
+        width:42%;
 
     }
-
-
-
 
 
 
     #main-page-btn{
 
-
         width:60%;
 
+        margin:25px auto;
 
     }
-
-
-
 
 
 
     .contact-footer{
 
-
         width:100%;
 
-
-        padding:30px 15px;
-
-
-        margin-top:40px;
-
+        padding:35px 15px;
 
     }
-
 
 
 }
