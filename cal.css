@@ -4,232 +4,591 @@
 
 
 body{
+
     margin:0;
+
     padding:0;
+
+    width:100%;
+
     overflow-x:hidden;
+
+    font-family:Arial, sans-serif;
+
 }
+
 
 
 /* Title */
 
 .calculator-title{
 
-    margin:20px auto;
-
     text-align:center;
 
     color:rgb(244,82,163);
 
+    margin:20px auto;
+
 }
 
 
 
-/* Calculator Box */
+
+
+/* Calculator */
 
 #calculator{
 
-    margin:70px auto;
 
     background-color:burlywood;
 
+
     border:3px solid rgb(107,204,16);
+
 
     width:350px;
 
+
     height:500px;
+
 
     padding-top:20px;
 
+
+    margin:70px auto;
+
+
 }
+
+
 
 
 
 /* Display */
 
+
 #display{
+
 
     display:block;
 
-    border:2px solid red;
 
     width:245px;
 
+
     height:70px;
+
 
     margin:0 auto 20px;
 
+
+    border:2px solid red;
+
+
+    font-size:25px;
+
+
 }
 
 
 
-/* Calculator rows */
+
+
+
+/* Calculator Rows */
+
 
 .line-me{
 
-    margin:10px 50px;
 
     display:flex;
 
+
     gap:7px;
 
+
+    margin:10px 50px;
+
+
 }
+
+
 
 
 
 button{
 
-    background-color:greenyellow;
 
     width:45px;
 
+
     height:45px;
+
 
     padding:0;
 
+
+    background-color:greenyellow;
+
+
+    cursor:pointer;
+
+
 }
 
 
 
-/* Clear Delete */
+
 
 .main-button-data{
 
+
     width:117px;
+
 
     background-color:rgb(244,82,82);
 
+
 }
 
 
 
-/* Footer buttons */
+
+
+
+/* Content */
+
+
+h1{
+
+
+    max-width:900px;
+
+
+    margin:30px auto 10px;
+
+
+}
+
+
+
+
+
+h3{
+
+
+    max-width:900px;
+
+
+    margin:10px auto;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+
+
+/* Help About Feedback Contact */
+
 
 .last-line-me{
 
-    margin:10px 0;
 
     display:flex;
 
-    gap:7px;
 
     justify-content:center;
 
+
+    gap:10px;
+
+
     flex-wrap:wrap;
 
+
+    margin:10px 0;
+
+
 }
+
+
 
 
 
 .last-button{
 
+
     width:150px;
+
+
+    height:45px;
+
 
     background-color:rgb(82,244,179);
 
+
 }
 
 
 
-/* Main page button */
+
+
+
+/* Main Page */
+
 
 #main-page-btn{
 
-    margin:20px auto;
 
     display:block;
 
-    background-color:rgb(95,82,244);
+
+    margin:25px auto;
+
 
     width:180px;
 
+
     height:50px;
 
-    border:none;
+
+    background-color:rgb(95,82,244);
+
 
     color:white;
 
-    font-size:18px;
 
-    font-weight:600;
+    border:none;
+
 
     border-radius:8px;
 
-    cursor:pointer;
+
+    font-size:18px;
+
 
 }
+
+
+
 
 
 
 /* Footer */
 
+
 .contact-footer{
+
+
+    width:100%;
+
 
     background-color:#1a1a2e;
 
+
     color:white;
+
 
     padding:40px 20px 20px;
 
+
     text-align:center;
 
+
     margin-top:50px;
+
 
 }
 
 
 
-/* MOBILE */
+
+
+.footer-content h3{
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.contact-links{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    gap:20px;
+
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+
+
+.contact-btn{
+
+
+    text-decoration:none;
+
+
+    color:white;
+
+
+    padding:12px 24px;
+
+
+    border-radius:30px;
+
+
+}
+
+
+
+
+
+.email-btn{
+
+
+    background-color:#ff4757;
+
+
+}
+
+
+
+
+.linkedin-btn{
+
+
+    background-color:#0077b5;
+
+
+}
+
+
+
+
+
+
+
+/* ================= MOBILE ================= */
+
 
 @media(max-width:600px){
 
 
+
     .calculator-title{
 
-        font-size:30px;
+
+        font-size:28px;
+
+
+        width:100%;
+
 
         margin:20px 0;
 
+
     }
+
+
 
 
     #calculator{
 
-        width:95%;
+
+        width:100%;
+
 
         max-width:350px;
 
-        margin:40px auto;
+
+        height:auto;
+
+
+        margin:30px auto;
+
+
+        padding:20px 10px 30px;
+
 
     }
 
 
-    .line-me{
 
-        margin:10px auto;
 
-        justify-content:center;
-
-    }
 
 
     #display{
 
-        width:80%;
+
+        width:85%;
+
+
+        height:60px;
+
+
+        font-size:22px;
+
 
     }
 
 
-    h1,h3{
 
-        padding:0 15px;
+
+
+    .line-me{
+
+
+        width:100%;
+
+
+        margin:10px 0;
+
+
+        justify-content:center;
+
+
+        gap:8px;
+
 
     }
+
+
+
+
+
+    button{
+
+
+        width:55px;
+
+
+        height:55px;
+
+
+        font-size:16px;
+
+
+    }
+
+
+
+
+
+    .main-button-data{
+
+
+        width:130px;
+
+
+    }
+
+
+
+
+
+    h1{
+
+
+        width:100%;
+
+
+        padding:0 20px;
+
+
+        font-size:26px;
+
+
+    }
+
+
+
+
+
+
+    h3{
+
+
+        width:100%;
+
+
+        padding:0 20px;
+
+
+        font-size:16px;
+
+
+        line-height:1.5;
+
+
+    }
+
+
+
+
 
 
     .last-button{
 
-        width:140px;
+
+        width:45%;
+
+
+        height:45px;
+
 
     }
+
+
+
+
+
+
+    #main-page-btn{
+
+
+        width:60%;
+
+
+    }
+
+
+
+
+
+
+    .contact-footer{
+
+
+        width:100%;
+
+
+        padding:30px 15px;
+
+
+        margin-top:40px;
+
+
+    }
+
+
 
 }
