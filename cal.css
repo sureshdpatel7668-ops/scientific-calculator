@@ -1,175 +1,235 @@
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
+
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+
+/* Title */
+
 .calculator-title{
-    margin: 20px 190px;
-    color: rgb(244, 82, 163);
+
+    margin:20px auto;
+
+    text-align:center;
+
+    color:rgb(244,82,163);
+
 }
+
+
+
+/* Calculator Box */
 
 #calculator{
-    margin: 70px 200px;
-    background-color: burlywood;
-    border: 3px solid rgb(107, 204, 16);
-    width: 350px;
-    height: 500px;
-    padding-top: 20px;
+
+    margin:70px auto;
+
+    background-color:burlywood;
+
+    border:3px solid rgb(107,204,16);
+
+    width:350px;
+
+    height:500px;
+
+    padding-top:20px;
+
 }
+
+
+
+/* Display */
 
 #display{
-    border: 2px solid red;
-    margin: 0px 50px 20px;
-    width: 245px;
-    height: 70px;
+
+    display:block;
+
+    border:2px solid red;
+
+    width:245px;
+
+    height:70px;
+
+    margin:0 auto 20px;
+
 }
+
+
+
+/* Calculator rows */
 
 .line-me{
-    margin: 10px 50px;
-    display: flex;
-    gap: 7px;
+
+    margin:10px 50px;
+
+    display:flex;
+
+    gap:7px;
+
 }
+
+
 
 button{
-    background-color: greenyellow;
-    width: 45px;
-    height: 45px;
-    padding: 0;
+
+    background-color:greenyellow;
+
+    width:45px;
+
+    height:45px;
+
+    padding:0;
+
 }
+
+
+
+/* Clear Delete */
 
 .main-button-data{
-    width: 117px;
-    background-color: rgb(244, 82, 82);
+
+    width:117px;
+
+    background-color:rgb(244,82,82);
+
 }
+
+
+
+/* Footer buttons */
+
 .last-line-me{
-    margin: 10px 0px;
-    display: flex;
-    gap: 7px;
+
+    margin:10px 0;
+
+    display:flex;
+
+    gap:7px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
 }
+
+
 
 .last-button{
-    width: 150px;
-    background-color: rgb(82, 244, 179);
-}
-/* 1. Base Styling + Pulse Animation */
-#main-page-btn {
-    /* Basic Styling (Jo missing tha) */
-    margin: 20px 0px;
-    background-color: rgb(95, 82, 244);
-    width: 180px; 
-    height: 50px;
-    border: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    
-    /* Animation Link */
-    animation: pulseGlow 2s infinite; 
+
+    width:150px;
+
+    background-color:rgb(82,244,179);
+
 }
 
-/* 2. Hover Effect (Animation pause aur button upar uthega) */
-#main-page-btn:hover {
-    background-color: rgb(75, 62, 224);
-    transform: translateY(-2px);        
-    animation-play-state: paused; /* Hover karne par pulse rukega */
-    box-shadow: 0 6px 20px rgba(95, 82, 244, 0.4);
+
+
+/* Main page button */
+
+#main-page-btn{
+
+    margin:20px auto;
+
+    display:block;
+
+    background-color:rgb(95,82,244);
+
+    width:180px;
+
+    height:50px;
+
+    border:none;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
 }
 
-/* 3. Active Effect (Click karne par daba hua effect) */
-#main-page-btn:active {
-    transform: translateY(1px);        
+
+
+/* Footer */
+
+.contact-footer{
+
+    background-color:#1a1a2e;
+
+    color:white;
+
+    padding:40px 20px 20px;
+
+    text-align:center;
+
+    margin-top:50px;
+
 }
 
-/* 4. Keyframes (Jo aapke paas sahi likha hua hai) */
-@keyframes pulseGlow {
-    0% {
-        box-shadow: 0 4px 15px rgba(95, 82, 244, 0.3);
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+
+    .calculator-title{
+
+        font-size:30px;
+
+        margin:20px 0;
+
     }
-    50% {
-        box-shadow: 0 4px 25px rgba(95, 82, 244, 0.7);
+
+
+    #calculator{
+
+        width:95%;
+
+        max-width:350px;
+
+        margin:40px auto;
+
     }
-    100% {
-        box-shadow: 0 4px 15px rgba(95, 82, 244, 0.3);
+
+
+    .line-me{
+
+        margin:10px auto;
+
+        justify-content:center;
+
     }
-}
-/* Footer Base Styling */
-.contact-footer {
-    background-color: #1a1a2e; /* Dark elegant background */
-    color: #ffffff;
-    padding: 40px 20px 20px 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 50px;
-    border-top: 3px solid rgb(95, 82, 244); /* Aapke main button wali purple theme tint */
-}
 
-.footer-content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
 
-.footer-content p {
-    color: #b0b0b0;
-    font-size: 15px;
-    margin-bottom: 25px;
-}
+    #display{
 
-/* Contact Buttons Row */
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
+        width:80%;
 
-/* Base Button Style */
-.contact-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
-    border-radius: 30px; /* Rounded pill shape */
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
+    }
 
-/* Email Specific (Red/Orange Accent) */
-.email-btn {
-    background-color: #ff4757;
-}
-.email-btn:hover {
-    background-color: #ff6b81;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4);
-}
 
-/* LinkedIn Specific (Classic Blue Accent) */
-.linkedin-btn {
-    background-color: #0077b5;
-}
-.linkedin-btn:hover {
-    background-color: #0096e6;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.4);
-}
+    h1,h3{
 
-/* Button Active Press Effect */
-.contact-btn:active {
-    transform: translateY(1px);
-}
+        padding:0 15px;
 
-/* Footer Bottom Copyright */
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 15px;
-    font-size: 13px;
-    color: #777777;
+    }
+
+
+    .last-button{
+
+        width:140px;
+
+    }
+
 }
